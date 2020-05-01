@@ -8,9 +8,8 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@types/node": "^13.13.4",
-    "tslint": "^6.1.2",
-    "typescript": "^3.8.3"
+    "faker": "^4.1.0"
   }
 }

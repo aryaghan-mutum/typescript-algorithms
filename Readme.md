@@ -18,5 +18,5 @@
 - Run using ts-node: `ts-node filename.ts`
 
 ###### Auto indent
-mac: `Shift + Option + F`
-windows: `Shift + Alt + F`
+- mac: `Shift + Option + F`
+- windows: `Shift + Alt + F`
