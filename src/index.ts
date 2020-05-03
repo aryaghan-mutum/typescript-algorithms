@@ -1,11 +1,26 @@
-var faker = require('faker');
+const faker = require('faker');
 
-var randomName = faker.name.findName(); // Rowan Nikolaus
-var randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
-var randomCard = faker.helpers.createCard();
+console.log("3")
 
-console.log(randomName)
-// console.log(randomEmail)
- console.log(randomCard)
+const sqrF = (n: number) => {
+    return n * n;
+}
+console.log(sqrF(4))
 
-console.log("2")
+class MyClass {
+
+    constructor() {
+    }
+
+    public sqr(n: number): number {
+        debugger
+        return n * n;
+    }
+}
+
+export default new MyClass()
+
+
+const obj = new MyClass()
+console.log(obj.sqr(10))
+

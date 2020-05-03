@@ -20,19 +20,19 @@ export class MyClass {
 	/**
 	 * Overloading functions
 	 */
-	add(a: number, b: number);
-	add(a: string, b: string);
+	// add(a: number, b: number);
+	// add(a: string, b: string);
 
-	public add(a, b) {
-		return a + b;
-	}
+	// public add(a: number, b: number) : number{
+	// 	return a + b;
+	// }
 
 }
 
 var obj = new MyClass('anurag', 26);
 console.log('As Nnumber: ' + obj.asNumber(2));
-console.log('Add 2 Nums: ' + obj.add(3, 4));
-console.log('Add 2 Strings: ' + obj.add('hello', 'boy'));
+// console.log('Add 2 Nums: ' + obj.add(3, 4));
+// console.log('Add 2 Strings: ' + obj.add('hello', 'boy'));
 
 let print = () => console.log('Use lambda function: ' + obj.asNumber2(32));
 print();
