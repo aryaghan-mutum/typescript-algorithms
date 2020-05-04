@@ -6,6 +6,7 @@
 
 - Install TypeScript locally: `npm install -D typescript`
 - Install TS Node locally: `npm install -D ts-node`
+- Install FlatMap: `npm i array.prototype.flatmap` and `npm install --save array.prototype.flatmap`
 
 ###### Check Version
 - `tsc -v`

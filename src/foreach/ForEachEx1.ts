@@ -2,7 +2,6 @@
  * @author Anurag Muthyam
  * Define a method which generates 5 random numbers both in iterative and declarative style.
  */
-import {Constants} from "../utils/Constants";
 
 class ForEachEx1 {
 

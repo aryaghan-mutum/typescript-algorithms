@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^13.13.4",
+    "array.prototype.flatmap": "^1.2.3",
     "faker": "^4.1.0"
   }
 }
