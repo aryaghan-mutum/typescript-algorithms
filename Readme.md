@@ -10,9 +10,9 @@
 - Install from: `npm i array.from`
 - Install range: `npm i array-range` and import: `var range = require('array-range')`
 - Install Collections: `npm install --save collections`
-- Install streams: `npm install streamjs` and import: `const Stream = require('stream')`
+- Install streams: `npm install --save sequency` and import: `const Stream = require('stream')`
 - Typescript EVAL: `npm i ts-node`
-- Immutable ds: `npm install immutable`
+- Immutable data structure: `npm install immutable` or `npm install mori`
 
 
 ###### Check Version

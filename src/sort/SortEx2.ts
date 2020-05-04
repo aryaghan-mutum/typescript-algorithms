@@ -1,6 +1,5 @@
-import {Constants} from "../utils/Constants";
-const Stream = require('stream')
-const { Map } = require('immutable');
+import {Constants} from "../utils/Constants"
+var sequency = require("sequency")
 
 /**
  * @author Anurag Muthyam
@@ -8,13 +7,12 @@ const { Map } = require('immutable');
 
 class SortEx2 {
 
-    public f(): void {
+    public f(): number {
         let arr = Constants.numbersList
-        const map1 = Map({ a: 1, b: 2, c: 3 })
-        const map2 = map1.set('b', 50)
-
-        console.log(map1);
-        console.log(map2);
+        return sequency.asSequence(arr)
+            .filter((n: number) => n % 2 == 0)
+            .map((n: number) => n * 2)
+            .fla()
 
     }
 

@@ -1,7 +1,15 @@
 "use strict";
 exports.__esModule = true;
 var Constants_1 = require("../utils/Constants");
-var Stream = require('stream');
+// import {
+//     asSequence,
+//     sequenceOf,
+//     emptySequence,
+//     range,
+//     generateSequence,
+//     extendSequence
+// } from 'sequency';
+var sequency = require("sequency");
 var Map = require('immutable').Map;
 /**
  * @author Anurag Muthyam
@@ -11,10 +19,10 @@ var SortEx2 = /** @class */ (function () {
     }
     SortEx2.prototype.f = function () {
         var arr = Constants_1.Constants.numbersList;
-        var map1 = Map({ a: 1, b: 2, c: 3 });
-        var map2 = map1.set('b', 50);
-        console.log(map1);
-        console.log(map2);
+        return sequency.asSequence(arr)
+            .filter(function (n) { return n % 2 == 0; })
+            .map(function (n) { return n * 2; })
+            .findLast();
     };
     return SortEx2;
 }());

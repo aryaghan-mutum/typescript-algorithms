@@ -31,14 +31,6 @@ var SortEx1 = /** @class */ (function () {
             .sort()
             .forEach(function (city) { return console.log(city); });
     };
-    SortEx1.prototype.f = function () {
-        var arr = Constants_1.Constants.numbersList;
-        console.log(Stream([1, 2, 3]));
-        Stream([1, 2, 3, 4])
-            .filter(function (num) { return num > 4; })
-            .map(function (num) { return num % 2 == 0; })
-            .forEach(function (num) { return console.log(num); });
-    };
     return SortEx1;
 }());
 exports["default"] = new SortEx1();
