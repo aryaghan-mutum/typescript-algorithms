@@ -1,5 +1,3 @@
-import {Constants} from "../utils/Constants"
-
 let sequency = require("sequency")
 
 /**
