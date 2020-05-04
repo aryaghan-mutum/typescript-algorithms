@@ -9,22 +9,22 @@ var Constants_1 = require("../utils/Constants");
 var MapEx1 = /** @class */ (function () {
     function MapEx1() {
     }
-    MapEx1.prototype.squaresImperativeApproach = function () {
+    MapEx1.prototype.squaresImperativeApproach = function (numbers) {
         var squaresList = [];
-        for (var _i = 0, _a = Constants_1.Constants.numbersList; _i < _a.length; _i++) {
-            var n = _a[_i];
+        for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
+            var n = numbers_1[_i];
             var sqr = n * n;
             squaresList.push(sqr);
             n++;
         }
         return squaresList;
     };
-    MapEx1.prototype.squaresFunctionalApproach = function () {
-        return Constants_1.Constants.numbersList.map(function (n) { return n * n; });
+    MapEx1.prototype.squaresFunctionalApproach = function (numbers) {
+        return numbers.map(function (n) { return n * n; });
     };
     return MapEx1;
 }());
 exports["default"] = new MapEx1();
 var mapEx1Obj = new MapEx1();
-console.log(mapEx1Obj.squaresImperativeApproach());
-console.log(mapEx1Obj.squaresFunctionalApproach());
+console.log(mapEx1Obj.squaresImperativeApproach(Constants_1.Constants.numbersList));
+console.log(mapEx1Obj.squaresFunctionalApproach(Constants_1.Constants.numbersList));

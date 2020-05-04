@@ -7,6 +7,10 @@
 - Install TypeScript locally: `npm install -D typescript`
 - Install TS Node locally: `npm install -D ts-node`
 - Install FlatMap: `npm i array.prototype.flatmap` and `npm install --save array.prototype.flatmap`
+- Install from: `npm i array.from`
+- Install range: `npm i array-range` and import: `var range = require('array-range')`
+- Typescript EVAL `npm i ts-node`
+
 
 ###### Check Version
 - `tsc -v`

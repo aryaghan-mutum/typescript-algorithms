@@ -29,6 +29,7 @@ class ForEachEx1 {
             .forEach(n => console.log("Rand # functional approach 2: " + n))
     }
 
+    // using spread operator (...)
     public log5RandNumbersFunctionalApproach3(): void {
         [...Array(this.MAX)]
             .map(() => Math.random() * 2)

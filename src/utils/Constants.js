@@ -11,6 +11,12 @@ var Constants = /** @class */ (function () {
     Constants.doubleNumbersList = [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0];
     Constants.priceList = [10.0, 10.0, 10.0, 10.0];
     Constants.priceList2 = [10.0, 10.0, 10.1, 10.0];
+    Constants.floridaZipCodeList = [
+        { zipCode: 32004, region: 'Ponte Vedra Beach' },
+        { zipCode: 32007, region: 'Bostwick' },
+        { zipCode: 32006, region: 'Fleming Island' },
+        { zipCode: 32003, region: 'Orange Park' }
+    ];
     return Constants;
 }());
 exports.Constants = Constants;

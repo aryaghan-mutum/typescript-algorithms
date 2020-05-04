@@ -12,13 +12,13 @@ var Constants_1 = require("../utils/Constants");
 var MapEx2 = /** @class */ (function () {
     function MapEx2() {
     }
-    MapEx2.prototype.printListOfFlowersInUpperCase = function () {
-        Constants_1.Constants.flowersList
+    MapEx2.prototype.printListOfFlowersInUpperCase = function (flowers) {
+        flowers
             .sort()
-            .map(function (fruit) { return fruit.toUpperCase(); })
-            .forEach(function (fruit) { return console.log(fruit); });
+            .map(function (flower) { return flower.toUpperCase(); })
+            .forEach(function (flower) { return console.log(flower); });
     };
     return MapEx2;
 }());
 exports["default"] = new MapEx2();
-new MapEx2().printListOfFlowersInUpperCase();
+new MapEx2().printListOfFlowersInUpperCase(Constants_1.Constants.flowersList);

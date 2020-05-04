@@ -11,8 +11,8 @@ import {Constants} from "../utils/Constants"
 
 class MapEx2 {
 
-    public printListOfFlowersInUpperCase(): void {
-        Constants.flowersList
+    public printListOfFlowersInUpperCase(flowers: string[]): void {
+        flowers
             .sort()
             .map(flower => flower.toUpperCase())
             .forEach(flower => console.log(flower))
@@ -21,5 +21,5 @@ class MapEx2 {
 
 export default new MapEx2()
 
-new MapEx2().printListOfFlowersInUpperCase()
+new MapEx2().printListOfFlowersInUpperCase(Constants.flowersList)
 

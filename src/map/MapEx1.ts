@@ -8,10 +8,10 @@ import {Constants} from "../utils/Constants"
 
 class MapEx1 {
 
-    public squaresImperativeApproach(): number[] {
+    public squaresImperativeApproach(numbers: number[]): number[] {
         let squaresList: number[] = [];
 
-        for (let n of Constants.numbersList) {
+        for (let n of numbers) {
             let sqr = n * n
             squaresList.push(sqr)
             n++
@@ -20,8 +20,8 @@ class MapEx1 {
         return squaresList
     }
 
-    public squaresFunctionalApproach(): number[] {
-        return Constants.numbersList.map(n => n * n)
+    public squaresFunctionalApproach(numbers: number[]): number[] {
+        return numbers.map(n => n * n)
     }
 
 }
@@ -29,6 +29,6 @@ class MapEx1 {
 export default new MapEx1()
 
 let mapEx1Obj = new MapEx1()
-console.log(mapEx1Obj.squaresImperativeApproach())
-console.log(mapEx1Obj.squaresFunctionalApproach())
+console.log(mapEx1Obj.squaresImperativeApproach(Constants.numbersList))
+console.log(mapEx1Obj.squaresFunctionalApproach(Constants.numbersList))
 
