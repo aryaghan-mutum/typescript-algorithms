@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var Constants_1 = require("../utils/Constants");
+var Map = require('immutable').Map;
 /**
  * @author Anurag Muthyam
  * Below is the method that squares(doubles) each number in a list using traditional approach
@@ -22,9 +23,14 @@ var MapEx1 = /** @class */ (function () {
     MapEx1.prototype.squaresFunctionalApproach = function (numbers) {
         return numbers.map(function (n) { return n * n; });
     };
+    MapEx1.prototype.squaresImmutable = function (numbers) {
+        var map = Map(numbers);
+        return map;
+    };
     return MapEx1;
 }());
 exports["default"] = new MapEx1();
 var mapEx1Obj = new MapEx1();
 console.log(mapEx1Obj.squaresImperativeApproach(Constants_1.Constants.numbersList));
 console.log(mapEx1Obj.squaresFunctionalApproach(Constants_1.Constants.numbersList));
+console.log(mapEx1Obj.squaresImmutable(Constants_1.Constants.numbersList));

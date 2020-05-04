@@ -1,6 +1,10 @@
 "use strict";
 exports.__esModule = true;
 var Constants_1 = require("../utils/Constants");
+var Stream = require('stream');
+/**
+ * @author Anurag Muthyam
+ */
 var SortEx1 = /** @class */ (function () {
     function SortEx1() {
     }
@@ -21,6 +25,20 @@ var SortEx1 = /** @class */ (function () {
     SortEx1.prototype.sortCitiesInDescOrderFunctionalApproach = function () {
         return this.sortCitiesInAscOrderFunctionalApproach().reverse();
     };
+    SortEx1.prototype.sortAndPrintCities = function () {
+        return Constants_1.Constants.citiesList
+            .map(function (city) { return city.toUpperCase(); })
+            .sort()
+            .forEach(function (city) { return console.log(city); });
+    };
+    SortEx1.prototype.f = function () {
+        var arr = Constants_1.Constants.numbersList;
+        console.log(Stream([1, 2, 3]));
+        Stream([1, 2, 3, 4])
+            .filter(function (num) { return num > 4; })
+            .map(function (num) { return num % 2 == 0; })
+            .forEach(function (num) { return console.log(num); });
+    };
     return SortEx1;
 }());
 exports["default"] = new SortEx1();
@@ -29,3 +47,4 @@ console.log("Imperative Approach ASC order: " + sortEx1Obj.sortCitiesInAscOrderI
 console.log("Imperative Approach DSC order: " + sortEx1Obj.sortCitiesInDescOrderImperativeApproach()); //[ 'SAN FRANCISCO', 'MIAMI', 'FARGO', 'COLUMBUS' ]
 console.log("Declarative Approach ASC order: " + sortEx1Obj.sortCitiesInAscOrderFunctionalApproach()); //[ 'COLUMBUS', 'FARGO', 'MIAMI', 'SAN FRANCISCO' ]
 console.log("Declarative Approach DSC order: " + sortEx1Obj.sortCitiesInDescOrderFunctionalApproach()); //[ 'SAN FRANCISCO', 'MIAMI', 'FARGO', 'COLUMBUS' ]
+sortEx1Obj.sortAndPrintCities();

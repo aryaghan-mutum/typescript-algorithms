@@ -9,7 +9,10 @@
 - Install FlatMap: `npm i array.prototype.flatmap` and `npm install --save array.prototype.flatmap`
 - Install from: `npm i array.from`
 - Install range: `npm i array-range` and import: `var range = require('array-range')`
-- Typescript EVAL `npm i ts-node`
+- Install Collections: `npm install --save collections`
+- Install streams: `npm install streamjs` and import: `const Stream = require('stream')`
+- Typescript EVAL: `npm i ts-node`
+- Immutable ds: `npm install immutable`
 
 
 ###### Check Version

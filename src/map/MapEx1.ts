@@ -1,4 +1,5 @@
 import {Constants} from "../utils/Constants"
+const { Map } = require('immutable');
 
 /**
  * @author Anurag Muthyam
@@ -31,4 +32,5 @@ export default new MapEx1()
 let mapEx1Obj = new MapEx1()
 console.log(mapEx1Obj.squaresImperativeApproach(Constants.numbersList))
 console.log(mapEx1Obj.squaresFunctionalApproach(Constants.numbersList))
+
 

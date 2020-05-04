@@ -1,6 +1,6 @@
 import {Constants} from "../utils/Constants";
 
-class ReduceEx4 {
+class ReduceEx5 {
 
     public addCommasBetweenItemsImperativeApproach(flowers: string[]): string[] {
         for (let i = 1; i < flowers.length; i++) {
@@ -11,11 +11,11 @@ class ReduceEx4 {
 
 }
 
-export default new ReduceEx4()
+export default new ReduceEx5()
 
-let reduceEx4Obj = new ReduceEx4()
+let reduceEx5Obj = new ReduceEx5()
 
-console.log(reduceEx4Obj.addCommasBetweenItemsImperativeApproach(Constants.flowersList))
+console.log(reduceEx5Obj.addCommasBetweenItemsImperativeApproach(Constants.flowersList))
 
 
 

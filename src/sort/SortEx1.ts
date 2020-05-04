@@ -1,4 +1,5 @@
-import {Constants} from "../utils/Constants";
+import {Constants} from "../utils/Constants"
+const Stream = require('stream')
 
 /**
  * @author Anurag Muthyam
@@ -33,7 +34,6 @@ class SortEx1 {
             .sort()
             .forEach(city => console.log(city))
     }
-
 }
 
 export default new SortEx1()
