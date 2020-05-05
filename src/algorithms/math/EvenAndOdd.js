@@ -1,11 +1,10 @@
 "use strict";
 exports.__esModule = true;
-var Constants_1 = require("../../utils/Constants");
 var sequency = require("sequency");
 var EvenAndOdd = /** @class */ (function () {
     function EvenAndOdd() {
     }
-    EvenAndOdd.isEvenMethod1 = function (n) {
+    EvenAndOdd.prototype.isEvenMethod1 = function (n) {
         if (n % 2 == 0) {
             return true;
         }
@@ -13,13 +12,13 @@ var EvenAndOdd = /** @class */ (function () {
             return false;
         }
     };
-    EvenAndOdd.isEven = function (n) {
+    EvenAndOdd.prototype.isEven = function (n) {
         return n % 2 == 0 ? true : false;
     };
-    EvenAndOdd.isOdd = function (n) {
+    EvenAndOdd.prototype.isOdd = function (n) {
         return Math.abs(n % 2) == 1;
     };
-    EvenAndOdd.checkNumbersAreEvenInList = function (lst) {
+    EvenAndOdd.prototype.checkNumbersAreEvenInList = function (lst) {
         var _this = this;
         var resultList = [];
         sequency.asSequence(lst)
@@ -28,7 +27,7 @@ var EvenAndOdd = /** @class */ (function () {
         });
         return resultList;
     };
-    EvenAndOdd.checkNumbersAreOddInList = function (lst) {
+    EvenAndOdd.prototype.checkNumbersAreOddInList = function (lst) {
         var _this = this;
         var resultList = [];
         sequency.asSequence(lst)
@@ -40,7 +39,9 @@ var EvenAndOdd = /** @class */ (function () {
     return EvenAndOdd;
 }());
 exports["default"] = new EvenAndOdd();
-console.log(EvenAndOdd.isEven(2));
-console.log(EvenAndOdd.isOdd(3));
-console.log(EvenAndOdd.checkNumbersAreEvenInList(Constants_1.Constants.numbersList));
-console.log(EvenAndOdd.checkNumbersAreOddInList(Constants_1.Constants.numbersList));
+var evenOddObj = new EvenAndOdd();
+// console.log(evenOddObj.isEven(2))
+// console.log(evenOddObj.isOdd(3))
+//
+// console.log(evenOddObj.checkNumbersAreEvenInList(Constants.numbersList))
+// console.log(evenOddObj.checkNumbersAreOddInList(Constants.numbersList))

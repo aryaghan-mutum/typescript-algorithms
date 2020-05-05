@@ -4,7 +4,7 @@ let sequency = require("sequency")
 
 class EvenAndOdd {
 
-    static isEvenMethod1(n: number): boolean {
+    isEvenMethod1(n: number): boolean {
         if (n % 2 == 0) {
             return true
         } else {
@@ -12,15 +12,15 @@ class EvenAndOdd {
         }
     }
 
-    static isEven(n: number): boolean {
+    isEven(n: number): boolean {
         return n % 2 == 0 ? true : false
     }
 
-    static isOdd(n: number): boolean {
+    isOdd(n: number): boolean {
         return Math.abs(n % 2) == 1
     }
 
-    static checkNumbersAreEvenInList(lst: number[]): boolean[] {
+    checkNumbersAreEvenInList(lst: number[]): boolean[] {
         let resultList: boolean[] = []
         sequency.asSequence(lst)
             .forEach((n: number) => {
@@ -29,7 +29,7 @@ class EvenAndOdd {
         return resultList
     }
 
-    static checkNumbersAreOddInList(lst: number[]): boolean[] {
+    checkNumbersAreOddInList(lst: number[]): boolean[] {
         let resultList: boolean[] = []
         sequency.asSequence(lst)
             .forEach((n: number) => {
@@ -42,9 +42,11 @@ class EvenAndOdd {
 
 export default new EvenAndOdd()
 
-console.log(EvenAndOdd.isEven(2))
-console.log(EvenAndOdd.isOdd(3))
+let evenOddObj = new EvenAndOdd()
 
-console.log(EvenAndOdd.checkNumbersAreEvenInList(Constants.numbersList))
-console.log(EvenAndOdd.checkNumbersAreOddInList(Constants.numbersList))
+// console.log(evenOddObj.isEven(2))
+// console.log(evenOddObj.isOdd(3))
+//
+// console.log(evenOddObj.checkNumbersAreEvenInList(Constants.numbersList))
+// console.log(evenOddObj.checkNumbersAreOddInList(Constants.numbersList))
 
