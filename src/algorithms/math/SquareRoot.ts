@@ -1,4 +1,4 @@
-import Average from "./Average";
+import math from "./Average";
 
 class SquareRoot {
 
@@ -26,7 +26,7 @@ class SquareRoot {
 
         while (start + 1 < end) {
 
-            let mid = Average.averageTwoNumbers(start, (end - start))
+            let mid = math.averageTwoNumbers(start, (end - start))
 
             if (mid * mid == n)
                 return mid

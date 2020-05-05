@@ -2,24 +2,16 @@ let sequency = require("sequency")
 
 class Helper {
 
-    static square(n: number): number {
-        return n * n
-    }
+    square = (n: number): number => n * n
+    cube = (n: number) => this.square(n) * n
+    add1 = (n: number): number => n + 1
+    sub1 = (n: number): number => n - 1
+    double = (n: number): number => n + 2
+    half = (n: number): number => n / 2
 
-    static cube(n: number): number {
-        return this.square(n) * n
-    }
+    first = (lst: number[]): number => lst[0]
 
-    static add1(n: number): number {
-        return n + 1
-    }
-
-    static sub1(n: number): number {
-        return n - 1
-    }
-
-    static first(lst: number[]): number {
-        return lst[0]
-    }
 
 }
+
+export default new Helper()
