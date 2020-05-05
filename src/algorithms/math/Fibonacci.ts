@@ -1,4 +1,10 @@
-class Fibonacci {
+import {BaseClass} from "../../BaseClass"
+
+class Fibonacci extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     static fibonacci(n: number): number {
         if (n == 0) {

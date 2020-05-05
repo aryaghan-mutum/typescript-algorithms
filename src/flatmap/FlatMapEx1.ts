@@ -1,4 +1,5 @@
 import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass"
 
 var sequency = require("sequency")
 
@@ -12,8 +13,11 @@ var sequency = require("sequency")
  * Get the unique chars Output: [ , A, E, F, G, H, I, M, N, O, R, S, T, V]
  */
 
-class FlatMapEx1 {
+class FlatMapEx1 extends BaseClass {
 
+    constructor() {
+        super()
+    }
     public getUniqueCharsFromListOfCitiesIterativeApproach(cities: string[]): string[] {
         return sequency.asSequence(cities)
             .map((city: string) => city.toLocaleUpperCase())

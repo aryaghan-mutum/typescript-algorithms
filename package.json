@@ -17,6 +17,7 @@
     "collections": "^5.1.11",
     "faker": "^4.1.0",
     "immutable": "^4.0.0-rc.12",
+    "js-logger": "^1.6.0",
     "mori": "^0.3.2",
     "sequency": "^0.19.2",
     "streamjs": "^1.6.4",

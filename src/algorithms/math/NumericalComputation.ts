@@ -1,8 +1,13 @@
-import {Constants} from "../../utils/Constants";
+import {Constants} from "../../utils/Constants"
+import {BaseClass} from "../../BaseClass"
 
 let sequency = require("sequency")
 
-class NumericalComputation {
+class NumericalComputation extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     static doubleEvenNums(numbers: Array<number>): number[] {
         return sequency.asSequence(numbers)

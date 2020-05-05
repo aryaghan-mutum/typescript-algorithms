@@ -1,13 +1,18 @@
 import {Constants} from "../../utils/Constants";
+import {BaseClass} from "../../BaseClass";
 
-class DeleteEmptyString {
+class DeleteEmptyString extends BaseClass {
 
-    // TODO fix this 
+    constructor() {
+        super()
+    }
+
+    // TODO fix this
     deleteEmptyString(lst: string[]): string[] {
         let resultLst: string[] = []
 
-        for(let str of lst) {
-            if(Object.keys(str).length) {
+        for (let str of lst) {
+            if (Object.keys(str).length) {
                 resultLst.push(str)
             }
         }

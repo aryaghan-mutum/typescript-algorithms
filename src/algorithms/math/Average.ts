@@ -1,6 +1,12 @@
+import {BaseClass} from "../../BaseClass"
+
 let sequency = require("sequency")
 
-class Average {
+class Average extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     averageTwoNumbers = (x: number, y: number): number => x + y / 2
 

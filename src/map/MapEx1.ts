@@ -1,5 +1,6 @@
 import {Constants} from "../utils/Constants"
-const { Map } = require('immutable');
+import {BaseClass} from "../BaseClass"
+const {Map} = require('immutable')
 
 /**
  * @author Anurag Muthyam
@@ -7,7 +8,11 @@ const { Map } = require('immutable');
  * Write a method in functional style to achieve the same result using map() operator
  */
 
-class MapEx1 {
+class MapEx1 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public squaresImperativeApproach(numbers: number[]): number[] {
         let squaresList: number[] = [];

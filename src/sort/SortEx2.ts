@@ -1,11 +1,17 @@
 import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass"
+
 var sequency = require("sequency")
 
 /**
  * @author Anurag Muthyam
  */
 
-class SortEx2 {
+class SortEx2 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public f(): number {
         let arr = Constants.numbersList

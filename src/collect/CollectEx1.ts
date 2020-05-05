@@ -1,8 +1,13 @@
 import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass"
 
 let sequency = require("sequency")
 
-class CollectEx1 {
+class CollectEx1 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public doubleListFunctionalApproach(lst: number[]): number[] {
         return sequency.asSequence(lst)

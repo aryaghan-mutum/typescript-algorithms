@@ -1,6 +1,11 @@
-import {Constants} from "../utils/Constants";
+import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass"
 
-class ReduceEx3 {
+class ReduceEx3 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public getMinUsingMathFunc(numbers: number[]): number {
         return Math.min.apply(null, numbers)

@@ -1,10 +1,15 @@
 import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass"
 
 /**
  * @author Anurag Muthyam
  */
 
-class FilterEx1 {
+class FilterEx1 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public isFargoPresentInListApproach1(cities: string[]): boolean {
         for (let city of cities) {

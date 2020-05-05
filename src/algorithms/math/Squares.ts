@@ -1,7 +1,14 @@
-import {Constants} from "../../utils/Constants";
+import {Constants} from "../../utils/Constants"
+import {BaseClass} from "../../BaseClass"
+import Logger = require("js-logger");
+
 let sequency = require("sequency")
 
-class Squares {
+class Squares extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     square = (n: number): number => n * n
 
@@ -12,5 +19,6 @@ class Squares {
 
 export default new Squares()
 
-// let o = new Squares()
-// console.log(o.squareLst(Constants.numbersList));
+let o = new Squares()
+Logger.info(o.squareLst(Constants.numbersList));
+

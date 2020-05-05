@@ -1,4 +1,10 @@
-class Factorial {
+import {BaseClass} from "../../BaseClass"
+
+class Factorial extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     static linearRecursiveFactorial(n: number): number {
         if (n == 1) {
@@ -18,6 +24,7 @@ class Factorial {
                 return factorialIter(z, count, maxCount)
             }
         }
+
         return factorialIter(1, 1, n)
     }
 }

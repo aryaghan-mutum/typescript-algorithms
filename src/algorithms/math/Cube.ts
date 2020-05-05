@@ -1,8 +1,13 @@
-import {Constants} from "../../utils/Constants";
+import {Constants} from "../../utils/Constants"
+import {BaseClass} from "../../BaseClass"
 
 let sequency = require("sequency")
 
-class Cube {
+class Cube extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     cube = (n: number): number => n * n * n
 

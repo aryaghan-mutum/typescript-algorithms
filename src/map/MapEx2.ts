@@ -1,4 +1,5 @@
 import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass";
 
 /**
  * @author Anurag Muthyam
@@ -9,7 +10,11 @@ import {Constants} from "../utils/Constants"
  * 4. It doesn't modify the stream, but instead creates a new list.
  */
 
-class MapEx2 {
+class MapEx2 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public printListOfFlowersInUpperCase(flowers: string[]): void {
         flowers

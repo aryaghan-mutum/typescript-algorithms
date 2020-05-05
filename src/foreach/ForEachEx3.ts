@@ -1,8 +1,14 @@
+import {BaseClass} from "../BaseClass"
+
 /**
  * @author Anurag Muthyam
  */
 
-class ForEachEx3 {
+class ForEachEx3 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     private str: string = 'Hello world'
 

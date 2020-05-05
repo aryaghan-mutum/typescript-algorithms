@@ -2,8 +2,13 @@
  * @author Anurag Muthyam
  * Define a method which generates 5 random numbers both in iterative and declarative style.
  */
+import {BaseClass} from "../BaseClass"
 
-class ForEachEx1 {
+class ForEachEx1 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     private readonly MAX: number = 5
 

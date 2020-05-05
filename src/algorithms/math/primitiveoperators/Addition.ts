@@ -1,6 +1,11 @@
-import math from "../../helper/Helper";
+import math from "../../helper/Helper"
+import {BaseClass} from "../../../BaseClass"
 
-class Addition {
+class Addition extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     /**
      * Add two numbers using recursion

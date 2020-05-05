@@ -1,11 +1,17 @@
 import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass"
+
 const Stream = require('stream')
 
 /**
  * @author Anurag Muthyam
  */
 
-class SortEx1 {
+class SortEx1 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public sortCitiesInAscOrderImperativeApproach(): string[] {
         let resultList: string[] = []

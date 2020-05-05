@@ -1,6 +1,11 @@
 import {Constants} from "../utils/Constants";
+import {BaseClass} from "../BaseClass"
 
-class ReduceEx5 {
+class ReduceEx5 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public addCommasBetweenItemsImperativeApproach(flowers: string[]): string[] {
         for (let i = 1; i < flowers.length; i++) {

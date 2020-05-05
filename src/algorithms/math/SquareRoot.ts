@@ -1,6 +1,11 @@
-import math from "./Average";
+import math from "./Average"
+import {BaseClass} from "../../BaseClass"
 
-class SquareRoot {
+class SquareRoot extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     static squareRootMethod1(n: number): number {
         let low = 0;

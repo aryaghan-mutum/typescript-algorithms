@@ -1,8 +1,13 @@
 import {Constants} from "../utils/Constants";
+import {BaseClass} from "../BaseClass"
 
 const range = require('array-range')
 
-class ReduceEx2 {
+class ReduceEx2 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public addNumsBetweenTwoNumbersUsingForLoop(minNumber: number, maxNumber: number): number {
         let sum = 0

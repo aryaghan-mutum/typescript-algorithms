@@ -1,6 +1,11 @@
-import {Constants} from "../utils/Constants";
+import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass"
 
-class ReduceEx1 {
+class ReduceEx1 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public sumTheNumbersImperativeApproach1(numbers: number[]): number {
         for (var i = 0, sum = 0; i < numbers.length; sum += numbers[i++]) ;

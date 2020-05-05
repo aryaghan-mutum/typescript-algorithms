@@ -1,7 +1,12 @@
+import {BaseClass} from "../../BaseClass"
+
 const range = require('array-range')
 
-class MultiplicationTable {
+class MultiplicationTable extends BaseClass {
 
+    constructor() {
+        super()
+    }
     static printMultiplicationTable(n: number): void {
         console.log("Multiplication table for " + n)
         console.log("---------------------------")

@@ -1,4 +1,10 @@
-class PythagoreanTriplets {
+import {BaseClass} from "../../../BaseClass"
+
+class PythagoreanTriplets extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     // triplet: a^2 + b^2 = c^2
     static pythagoreanTriplets(limit: number): number[][] {

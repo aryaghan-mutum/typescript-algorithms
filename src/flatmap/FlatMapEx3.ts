@@ -1,4 +1,5 @@
 import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass"
 
 let sequency = require("sequency")
 
@@ -11,14 +12,18 @@ let sequency = require("sequency")
  * Flatten a nested list
  */
 
-class FlatMapEx3 {
+class FlatMapEx3 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public flatMapListsImperativeApproach(numbers: number[][]): number[] {
 
         let resultList = []
 
-        for(let i of numbers) {
-            for(let j of i) {
+        for (let i of numbers) {
+            for (let j of i) {
                 resultList.push(j)
             }
         }

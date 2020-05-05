@@ -1,10 +1,16 @@
+import {BaseClass} from "../BaseClass"
+
 let sequency = require("sequency")
 
 /**
  *  @author Anurag Muthyam
  */
 
-class FlatMapEx2 {
+class FlatMapEx2 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public getDistinctNumbersFromNestedArray(numbers: number[][]): number[] {
         return sequency.asSequence(numbers)

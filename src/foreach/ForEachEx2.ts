@@ -1,10 +1,15 @@
 import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass";
 
 /**
  * @author Anurag Muthyam
  */
 
-class ForEachEx2 {
+class ForEachEx2 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public forEachImperativeApproach1(cities: string[]): void {
         for (let i = 0; i < cities.length; i++) {

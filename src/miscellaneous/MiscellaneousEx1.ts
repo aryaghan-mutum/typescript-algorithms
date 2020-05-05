@@ -1,11 +1,16 @@
-import {Constants} from "../utils/Constants";
+import {Constants} from "../utils/Constants"
+import {BaseClass} from "../BaseClass"
 
 /**
  * @author Anurag Muthyam
  * what are the result the below methods generate?
  */
 
-class MiscellaneousEx1 {
+class MiscellaneousEx1 extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     public static misc1(): void {
         Constants.numbersList

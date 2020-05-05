@@ -1,8 +1,13 @@
 import {Constants} from "../../utils/Constants";
+import {BaseClass} from "../../BaseClass";
 
 let sequency = require("sequency")
 
-class EvenAndOdd {
+class EvenAndOdd extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     isEvenMethod1(n: number): boolean {
         if (n % 2 == 0) {
@@ -41,12 +46,4 @@ class EvenAndOdd {
 }
 
 export default new EvenAndOdd()
-
-let evenOddObj = new EvenAndOdd()
-
-// console.log(evenOddObj.isEven(2))
-// console.log(evenOddObj.isOdd(3))
-//
-// console.log(evenOddObj.checkNumbersAreEvenInList(Constants.numbersList))
-// console.log(evenOddObj.checkNumbersAreOddInList(Constants.numbersList))
 

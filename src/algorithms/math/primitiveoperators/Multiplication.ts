@@ -1,8 +1,13 @@
 import Helper from "../../helper/Helper"
 import math from "../../helper/Helper"
 import evenOdd from "../EvenAndOdd"
+import {BaseClass} from "../../../BaseClass"
 
-class Multiplication {
+class Multiplication extends BaseClass {
+
+    constructor() {
+        super()
+    }
 
     /**
      * Multiply two numbers using iteration
