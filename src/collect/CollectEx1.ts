@@ -2,6 +2,7 @@ import {Constants} from "../utils/Constants"
 import {BaseClass} from "../BaseClass"
 
 let sequency = require("sequency")
+import Stream from "ts-stream"; // ES6 style
 
 class CollectEx1 extends BaseClass {
 

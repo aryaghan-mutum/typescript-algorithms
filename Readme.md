@@ -13,6 +13,7 @@
 - Install streams: `npm install --save sequency` and import: `const Stream = require('stream')`
 - String operations: `npm i typescript-string-operations`
 - logger: `npm i js-logger`
+- streams: `npm i ts-stream` and then `npm install --save ts-stream` 
 
 - Typescript EVAL: `npm i ts-node`
 - Immutable data structure: `npm install immutable` or `npm install mori`

@@ -22,6 +22,7 @@
     "sequency": "^0.19.2",
     "streamjs": "^1.6.4",
     "ts-node": "^8.10.1",
+    "ts-stream": "^2.0.1",
     "typescript-string-operations": "^1.3.2"
   }
 }
